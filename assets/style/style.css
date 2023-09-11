@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,700&family=Karla:wght@200;300&family=Lato:wght@300&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,600;1,6..12,700&family=Nunito:wght@200;400&family=Open+Sans:ital,wght@0,300;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,600;1,800&family=Qwitcher+Grypen:wght@700&family=Titillium+Web:ital,wght@0,200;1,400;1,700&display=swap');
+
+*{
+   margin:0;
+   padding:0;
+}
+:root{
+  --bg:#1b1f24;
+  --blue:#12aeec;
+  --whie:#ffffff;
+  --light-white:#c4c4c4;
+}
+body{
+   width:100vw;
+   height:100vh;
+}
+header{
+   display: flex;
+   justify-content: space-evenly;
+   background-color:var(--bg);
+   align-items:center;
+   padding:10px;
+}
+.logo a{
+   font-size:18px;
+   text-decoration: none;
+   color:var(--blue);
+   letter-spacing:1px;
+}
+.navbar ul {
+   display: flex;
+   align-items: center;
+}
+.navbar ul li{
+   padding:10px;
+}
+.navbar ul li a{
+   text-decoration: none;
+   color:white;
+}
+.hero-button button:nth-of-type(2),
+.h-btn{
+    border:1px solid var(--blue);
+    padding:.3em 2em;
+    color:var(--blue);
+    background-color: transparent;
+    cursor: pointer;
+    font-size:16px;
+    font-weight:900;
+    transition: all 0.5s ease;
+}
+header button:hover{
+   background-color:var(--blue);
+   color:white;
+}
+.hero-section{
+   background-color:var(--bg);
+   color: white;
+   /* padding:240px 140px; */
+   display: flex;
+   padding: 20px 120px 0 240px;
+   align-items: center;
+}
+.image img{
+   width:320px;
+}
+.contant h2{
+   margin:10px 0px;
+   font-size:3em;
+   color:var(--whie);
+}
+.contant h2 span{
+   color:var(--blue);
+}
+.contant p{
+   margin:10px 0px;
+   /* width:450px; */
+   color:var(--light-white);
+   font-size:.9em;
+   line-height:24px;
+   max-width:65em;
+}
+.contant ul{
+    display: flex;
+}
+.contant ul li{
+   list-style-type: none;
+   padding:10px;
+   font-size: 19px;
+   cursor: pointer;
+}
+.hero-button{
+   margin-top:15px;
+   display: flex;
+   column-gap: 16px;
+}
+.hero-button button:nth-of-type(1){
+   padding:.16em 1em;
+   border:none;
+   background-color: var(--blue);
+   cursor: pointer;
+}
